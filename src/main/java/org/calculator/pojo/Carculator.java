@@ -67,7 +67,6 @@ public class Carculator extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
        String clickStr =  e.getActionCommand();
-        System.out.println(clickStr);
        if(".0123456789".indexOf(clickStr) != -1){
            this.input_text.setText(input_text.getText()+clickStr);
            this.input_text.setHorizontalAlignment(JTextField.RIGHT);
